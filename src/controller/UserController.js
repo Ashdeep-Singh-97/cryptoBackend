@@ -24,7 +24,7 @@ class UserController {
       res.cookie("token", token, {
         httpOnly: true,
         secure: process.env.MODE == 'Production',
-        sameSite: "strict",
+        sameSite: "None",
         maxAge: 2 * 60 * 60 * 1000,
       });
 
@@ -59,7 +59,7 @@ class UserController {
       res.cookie("token", token, {
         httpOnly: true,
         secure: process.env.MODE == 'Production',
-        sameSite: "strict",
+        sameSite: "None",
         maxAge: 2 * 60 * 60 * 1000,
       });
 
