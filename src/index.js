@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const corsOptions = {
-  origin: process.env.ORIGIN,
+  origin: "https://crypto-frontend-kx2k.vercel.app",
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization']
